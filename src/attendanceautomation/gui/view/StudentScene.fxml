@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceautomation.gui.controller.StudentSceneController">
+   <top>
+      <HBox fx:id="hBoxNavigationBar" alignment="CENTER" prefHeight="70.0" prefWidth="200.0" styleClass="lblFlow" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btn_logout" buttonType="RAISED" onAction="#handle_Logout" text="Log out" textFill="WHITE" />
+            <JFXButton fx:id="btn_week" buttonType="RAISED" onAction="#handle_Week" ripplerFill="WHITE" text="Today" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="170.0" right="5.0" />
+               </HBox.margin>
+            </JFXButton>
+            <Label prefHeight="21.0" prefWidth="82.0" />
+            <JFXButton fx:id="btn_overview" buttonType="RAISED" onAction="#handle_Overview" text="Overview" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" right="5.0" />
+               </HBox.margin>
+            </JFXButton>
+            <Label />
+            <Label prefHeight="21.0" prefWidth="206.0" styleClass="btnBarNameLabel">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView prefHeight="418.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="week" prefWidth="75.0" text="Week" />
+          <TableColumn prefWidth="154.0" text="Monday" />
+            <TableColumn prefWidth="108.0" text="Tuesday" />
+            <TableColumn prefWidth="139.0" text="Wednesday" />
+            <TableColumn prefWidth="143.0" text="Thursday" />
+            <TableColumn prefWidth="180.0" text="Friday" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

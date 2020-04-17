@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="878.0" styleClass="lblFlow" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceautomation.gui.controller.StudentLoginSceneController">
+   <children>
+      <Pane layoutX="34.0" layoutY="35.0" prefHeight="520.0" prefWidth="812.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/style.css">
+         <children>
+            <JFXTextField layoutX="290.0" layoutY="176.0" prefHeight="43.0" prefWidth="233.0" promptText="Username or E-mail" />
+            <JFXTextField layoutX="292.0" layoutY="232.0" prefHeight="51.0" prefWidth="233.0" promptText="Password" />
+            <ImageView fitHeight="128.0" fitWidth="120.0" layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@../assets/5e4ee2c3a7db5.png" />
+               </image>
+            </ImageView>
+            <JFXCheckBox fx:id="cb_rememberstudent" layoutX="290.0" layoutY="322.0" onAction="#handle_RememberStudent" text="Remember Username" />
+            <JFXButton fx:id="login" layoutX="290.0" layoutY="374.0" onAction="#handle_LoginStudent" text="Log in">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

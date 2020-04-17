@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1288.0" style="-fx-background-color: #ffa500;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceautomation.gui.controller.TeacherOverviewSceneController">
+   <children>
+      <Pane layoutX="10.0" layoutY="14.0" prefHeight="85.0" prefWidth="158.0" style="-fx-background-color: #ffffff;" />
+      <TableView id="PaneColorsTeacherView" fx:id="tblStudentAbsenceOverview" layoutX="190.0" layoutY="265.0" prefHeight="434.0" prefWidth="1054.0" stylesheets="@../css/style.css">
+        <columns>
+            <TableColumn id="StudentName" prefWidth="260.0" text="Student Name" />
+          <TableColumn id="Presence_Absence" fx:id="colDate" prefWidth="167.0" text="Present/Absent" />
+            <TableColumn id="Date" fx:id="colDate" minWidth="0.0" prefWidth="428.0" text="Date" />
+            <TableColumn id="AttendancePercentage" fx:id="colStatus" prefWidth="273.0" text="Attendance %" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cb_selectclass" layoutX="10.0" layoutY="161.0" prefHeight="38.0" prefWidth="165.0" promptText="Select Class" stylesheets="@../css/style.css" />
+      <ComboBox id="PaneColorsTeacherView" fx:id="cb_selectstudent" layoutX="7.0" layoutY="265.0" prefHeight="31.0" prefWidth="165.0" promptText="Select Student" stylesheets="@../css/style.css" />
+      <Label id="Dashboard" fx:id="lblWeek" layoutX="1034.0" layoutY="68.0" prefHeight="50.0" prefWidth="185.0" stylesheets="@../css/style.css" text="Week 1">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label id="Dashboard" layoutX="456.0" layoutY="75.0" prefHeight="47.0" prefWidth="387.0" stylesheets="@../css/style.css" text="Class Overall Attendance">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label id="Dashboard" layoutX="562.0" layoutY="139.0" prefHeight="66.0" prefWidth="165.0" stylesheets="@../css/style.css" text="\%">
+         <font>
+            <Font size="82.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="85.0" fitWidth="157.0" layoutX="40.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/5e4ee2c3a7db5.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
