@@ -23,7 +23,7 @@
       </TableView>
       <ComboBox fx:id="cb_selectclass" layoutX="10.0" layoutY="161.0" prefHeight="38.0" prefWidth="165.0" promptText="Select Class" stylesheets="@../css/style.css" />
       <ComboBox id="PaneColorsTeacherView" fx:id="cb_selectstudent" layoutX="7.0" layoutY="265.0" prefHeight="31.0" prefWidth="165.0" promptText="Select Student" stylesheets="@../css/style.css" />
-      <Label id="Dashboard" fx:id="lblWeek" layoutX="1034.0" layoutY="68.0" prefHeight="50.0" prefWidth="185.0" stylesheets="@../css/style.css" text="Week 1">
+      <Label id="Dashboard" fx:id="lblWeek" layoutX="1032.0" layoutY="24.0" prefHeight="50.0" prefWidth="185.0" stylesheets="@../css/style.css" text="Week 1">
          <font>
             <Font size="45.0" />
          </font>
@@ -43,5 +43,9 @@
             <Image url="@../assets/5e4ee2c3a7db5.png" />
          </image>
       </ImageView>
+      <Label layoutX="1032.0" layoutY="112.0" text="Most absent students:" />
+      <Label layoutX="1042.0" layoutY="139.0" text="Student 1: 60%" />
+      <Label layoutX="1042.0" layoutY="170.0" text="Student 2: 50%" />
+      <Label layoutX="1042.0" layoutY="199.0" text="Student 3: 40%" />
    </children>
 </AnchorPane>
